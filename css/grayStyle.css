@@ -19,6 +19,7 @@ body{
 	animation: scrollingBackground 20s ease infinite;
 	height: 100vh;
 	
+}
 	
 
 @keyframes scrollingBackground {

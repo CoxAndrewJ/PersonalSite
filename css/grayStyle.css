@@ -41,6 +41,11 @@ body{
 All effects that pertain to the header / TOP
 *************************************************/
 
+nav{
+	background: black;
+	
+}
+
 
 /************************************
 All Effects applied to the main body

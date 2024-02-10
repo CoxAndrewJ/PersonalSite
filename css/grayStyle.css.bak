@@ -1,0 +1,140 @@
+/*Andrew Cox Gray scale style sheet hopefully with responsiveness*/
+
+
+/*Whole page CSS*/
+*{
+	display: grid;
+	
+	margin: 0;
+	padding: 0;
+	
+	font: Trebuchet MS (sans-serif);
+}
+
+body{
+	background: radial-gradient(rgb(50, 50, 50), rgb(100,100,100), rgb(150, 150, 150), rgb(200,200,200));
+	background-size: 400% 400%; /*The background size must increase, or else we don't get the desired effect*/
+	animation: scrollingBackground 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes scrollingBackground {
+	
+	0%{
+		background-position: 0% 0%;
+	}
+	
+	50%{
+		background-position: 100% 100%;
+	}
+	
+	100%{
+		background-position: 0% 0%;
+	}
+}
+
+
+/*************************************************
+All effects that pertain to the header / TOP
+*************************************************/
+
+
+/************************************
+All Effects applied to the main body
+************************************/
+
+
+.body{
+	/*line up left and right body sides using grid*/
+	display: grid;
+	gap: 50px;
+	grid-template-columns: auto auto;
+	padding: 30px;
+	
+	/*text*/
+	color: white;
+		
+}
+.body:hover{
+	animation: fadeIn 1s;
+}
+
+
+/*Create a hover effect to change color on hover for all elements in body*/
+.body-left-content:hover, .body-right-content:hover{
+	background-color: #ff3300;
+}
+
+.body-left-header, .body-right-header{
+	text-align: center;
+}
+
+
+@keyFrames fadeIn{
+	0% { 
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100% { 
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+/* Used to interact with the JS, but using my own CSS as above
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+*/
+
+
+
+
+/********************************
+All effects applied to the bottom
+********************************/
+
+.bottom{
+	text-align: right;
+	/*margin:0 auto;*/
+	width: 100%;
+	background: rgb(100,100,100);
+}
+
+.bottom-form{
+	margin:0 auto;
+}
+
+
+
+/*container--may as well be body*/
+
+///top
+////top-name
+////top-table
+/////top-row
+//////top-data
+
+//body
+///body-left
+////body-left-content
+/////body-left-header
+/////body-left-text
+///body-right
+////body-right-content
+/////body-right-header
+/////body-right-text
+
+//links
+
+//bottom
+///bottom-content
+///bottom-form
+
+
+/*color scheme? Follow this: https://www.youtube.com/shorts/7PRSqUwAuis*/

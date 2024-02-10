@@ -1,0 +1,91 @@
+<!DOCTYPE HTML5>
+
+<html>
+	
+	<head>
+		<title>Home</title>
+		<!-- Meta to change to device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Reference to Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Javascript Source -->
+		<script></script>
+	</head>
+	
+	<body>
+	
+	<div class="container">
+		<div class="top">
+			<header class="top-name">Andrew Cox</header>
+			<!-- Include the "img" tag inside an "a" tag to make the image clickable -->
+			<a href="about"><img class="top-img" src="img/coxandrewj.jpg" height="170" width="170"></a>
+			<table class="top-table">
+				<tr class="top-row">
+					<td class="top-data"><a href="about">About Me</a></td>
+					<td class="top-data"><a href="portfolio">Portfolio</a></td>
+				</tr>
+				<tr class="top-row">
+					<td class="top-data"><a href="contact">Contact</a></td>
+					<td class="top-data"><a href="links">External Links</a></td>	
+				</tr>
+			</table>
+		</div>
+		
+		<!-- The body. Main content of the page, Obviously. Talk about myself, Andrew Cox
+			Will likely be divied up into two columns, that don't span fully across the left and right sides, but are divided still -->
+		<div class="body">
+			<div class="body-left">
+				<div class="body-left-content">
+					<p>
+						Hello all, my name is Andrew Cox. I am a graduate of Salt Lake Community College, with an Associate of Science as well as an Associate of Computer Science.
+						I have studied code on and off since 2019, but only this year, 2021, did I really fall in love with it and have progressed quickly.
+						From creating my own webpage, to solving many problems on Project Euler using Java, as well as creating custom made Swing Java games, and a fundamental understanding
+						of PHP and JavaScript, I believe I am ready to break out into the technological world, and start coding professionally.
+					</p>
+				</div>
+			</div>
+			
+			<div class="body-right">
+				<div class="body-right-content">
+					<p>
+						Information on the right side of the page eventually
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Undecided -->
+		<div class="links">	
+		</div>
+		
+		<!-- Used to include information such as "send me an email address" -->
+		<div class="bottom">
+			<div class="bottom-content">
+				<form action="submitEmail/submitEmail.php" method="post" class="bottom-form">
+					<table>
+						<tr>
+							<td><p>Contact me</p></td>
+						</tr>				
+						<tr>
+							<td>Name</td>
+							<td><input type="text" placeholder="John Smith" name="name"></td>
+						</tr>
+						<tr>
+							<td>Email address</td>
+							<td><input type="text" placeholder="johnsmith@example.com" name="email"></td>
+						</tr>
+						<tr>
+							<td>Additional Information</td>
+							<td><textarea placeholder="Enter information here" name="user-message"></textarea></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="submit"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+	</body>
+
+</html>

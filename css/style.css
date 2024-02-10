@@ -1,0 +1,135 @@
+/*Andrew Cox, Coxandrewj.com stylesheet*/
+
+/*UNIVERSAL CSS*/
+
+body{
+	background: radial-gradient(rgb(100,210,100), rgb(150,0,150), rgb(255,69,0), rgb(50,50,250));	
+	background-size: 500% 500%; /*The background size must increase, or else we don't get the desired effect*/
+	animation: scrollingBackground 20s ease infinite;
+	height: 100vh;
+}
+
+@keyframes scrollingBackground {
+	
+	0%{
+		background-position: 0% 0%;
+	}
+	
+	50%{
+		background-position: 100% 100%;
+	}
+	
+	100%{
+		background-position: 0% 0%;
+	}
+}
+
+/*************************************************
+All effects that pertain to the header / TOP
+*************************************************/
+
+.top{
+	/*Display the items of the top in a grid like style*/
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	/*gap: 20px 20px;*/
+	
+	/*coloring the background of 'top'*/
+	background: white;
+	
+	/*border*/
+	border-radius: 5px;
+	border: 2px solid rgba(20,20,20,.2);
+	border-top: 0;
+	
+	/*font*/
+	font-family:  Georgia, serif;
+	
+	/*Always in view*/
+	width: 100%;
+	position: sticky;
+	top: 0; /*top 0 is necessary for sticky to work*/
+}
+
+.top-name{
+	/*Margin Auto, and Text-align center allows for text centered
+	both vertically and horizontally*/	
+	text-align: center;
+	margin: auto;
+	
+}
+
+/*apply effects to the image in the header with picture of me!*/
+.top-img{
+	border-radius: 20px 40px;	
+	border: 2px solid rgba(20,20,20,.2);
+}
+
+/*top-table class refers to the about me, portfolio, contact, and links*/
+.top-data{
+	border: 2px solid rgba(20,20,20,.2);
+	background: #bbbbbb;
+	margin: auto;
+	text-align: center;
+}
+
+/*increase size while hovering on top-table*/
+.top-data:hover{
+	
+	/*Transtion must be used in conjunction with transform to make the switch
+		not be instantaneous*/
+	transition: transform .5s;
+	transform: scale(1.2);
+	box-shadow: 5px rgba(20,20,20,.2);
+}
+
+
+/************************************
+All Effects applied to the main body
+************************************/
+
+.body{
+	border: 2px solid rgba(20,20,20,.2);
+	margin: 150px;
+	border-radius: 5px;
+	
+	/*Line up left and right body sides using grid*/
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.body-left, .body-right{
+	/*Border*/
+	border: 2px solid rgba(20,20,20,.2);
+	margin: 150px;
+	border-radius: 5px;
+	
+	/*background*/
+	background: white;
+	
+}
+
+/*
+.body-right{
+	border: 2px solid rgba(20,20,20,.2);
+	margin: 150px;
+	border-radius: 5px;
+}
+*/
+
+/********************************
+All effects applied to the bottom
+********************************/
+
+.bottom{
+	text-align: right;
+	/*margin:0 auto;*/
+	width: 100%;
+	background: white;
+}
+
+.bottom-form{
+	margin:0 auto;
+}
+
+

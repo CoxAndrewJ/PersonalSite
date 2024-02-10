@@ -8,7 +8,9 @@
 	margin: 0;
 	padding: 0;
 	
+	/*fonts*/
 	font: Trebuchet MS (sans-serif);
+	font-size: 32px;
 }
 
 body{
@@ -16,7 +18,8 @@ body{
 	background-size: 400% 400%; /*The background size must increase, or else we don't get the desired effect*/
 	animation: scrollingBackground 20s ease infinite;
 	height: 100vh;
-}
+	
+	
 
 @keyframes scrollingBackground {
 	
